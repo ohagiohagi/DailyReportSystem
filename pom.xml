@@ -31,6 +31,11 @@
   		<version>5.1.45</version>
   	</dependency>
   	<dependency>
+  		<groupId>org.hibernate</groupId>
+  		<artifactId>hibernate-core</artifactId>
+  		<version>5.2.13.Final</version>
+  	</dependency>
+  	<dependency>
   		<groupId>org.apache.taglibs</groupId>
   		<artifactId>taglibs-standard-impl</artifactId>
   		<version>1.2.5</version>
