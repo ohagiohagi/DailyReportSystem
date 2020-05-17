@@ -43,7 +43,6 @@ public class Employee {
     @Column(name = "name", nullable = false)
     private String name;
 
-
     @Column(name = "password", length = 64, nullable = false)
     private String password;
 
@@ -54,6 +53,9 @@ public class Employee {
     private Timestamp created_at;
 
     @Column(name = "updated_at", nullable = false)
+    private Timestamp updated_at;
+
+    @Column(name = "delete_flag", nullable = false)
     private Integer delete_flag;
 
     public Integer getId() {
@@ -102,6 +104,14 @@ public class Employee {
 
     public void setCreated_at(Timestamp created_at) {
         this.created_at = created_at;
+    }
+
+    public Timestamp getUpdated_at() {
+        return updated_at;
+    }
+
+    public void setUpdated_at(Timestamp updated_at) {
+        this.updated_at = updated_at;
     }
 
     public Integer getDelete_flag() {
